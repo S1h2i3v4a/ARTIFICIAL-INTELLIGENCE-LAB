@@ -1,0 +1,30 @@
+﻿============================================================
+PRACTICAL 22: BAYESIAN REASONING IN MEDICAL DIAGNOSIS (JAVA)
+============================================================
+
+--- Problem Baseline Probabilities ---
+  Prior Probability of Disease P(D):         0.0100 (1.0%)
+  Prior Probability of No Disease P(~D):     0.9900 (99.0%)
+  Test Sensitivity P(+ | D):                 0.9500 (95.0%)
+  Test False Positive Rate P(+ | ~D):        0.0500 (5.0%)
+  Test Specificity P(- | ~D):                0.9500 (95.0%)
+
+--- Case 1: Patient Receives a POSITIVE (+) Diagnostic Result ---
+  Evidence P(+) = P(+|D)P(D) + P(+|~D)P(~D)
+                = (0.95 * 0.01) + (0.05 * 0.99) = 0.05900
+  Posterior Probability P(D | +) = [0.9500 * 0.0100] / 0.05900
+  Result: Posterior P(D | +) = 0.1610 (16.10%)
+  Clinical Decision Insight: Even with a 95% sensitive test, the rare prior
+  prevalence (1%) means only 16.10% of positive-testing patients actually have the disease!
+
+--- Case 2: Sequential Bayesian Update (Second Independent Positive Test) ---
+  Updated Prior for Round 2: P(D) = 0.1610 (16.10%)
+  Posterior Probability P(D | +, +) = 0.7848 (78.48%)
+  Clinical Decision Insight: Two consecutive positive tests confirm the diagnosis with overwhelming certainty.
+
+--- Case 3: Patient Receives a NEGATIVE (-) Test Result ---
+  Evidence P(-) = 0.94100
+  Posterior Probability P(D | -) = 0.000531 (0.0531%)
+  Clinical Decision Insight: A negative result provides 99.9% assurance of health.
+
+[SUCCESS] Practical 22 executed successfully.

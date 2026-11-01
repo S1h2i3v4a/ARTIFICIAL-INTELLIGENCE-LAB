@@ -1,0 +1,22 @@
+﻿============================================================
+PRACTICAL 01: BREADTH FIRST SEARCH (BFS) IN JAVA
+============================================================
+
+--- Part A: Graph Traversal & Shortest Path via BFS ---
+Graph Adjacency List: {A=[B, C], B=[A, D, E], C=[A, F, G], D=[B], E=[B, F], F=[C, E], G=[C]}
+Start Node: A, Goal Node: F
+BFS Exploration Order: A -> B -> C -> D -> E -> F
+Shortest Path from A to F: A -> C -> F
+
+--- Part B: 2D Maze Solving with BFS ---
+Maze Layout (0 = Walkable, 1 = Wall):
+  [0, 0, 1, 0, 0]
+  [1, 0, 1, 0, 1]
+  [0, 0, 0, 0, 0]
+  [0, 1, 1, 1, 0]
+  [0, 0, 0, 1, 0]
+Start: (0,0), Goal: (4,4)
+Shortest Path Length: 8 steps
+Path Coordinates: [(0,0), (0,1), (1,1), (2,1), (2,2), (2,3), (2,4), (3,4), (4,4)]
+
+[SUCCESS] Practical 01 executed successfully.

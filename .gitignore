@@ -1,0 +1,6 @@
+*.class
+__pycache__/
+*.pyc
+test.pdf
+build_pdf.py
+generate_screenshots.py

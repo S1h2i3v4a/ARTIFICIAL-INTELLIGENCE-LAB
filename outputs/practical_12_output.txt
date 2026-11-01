@@ -1,0 +1,23 @@
+﻿============================================================
+PRACTICAL 12: REMOVE PUNCTUATION AND STOP WORDS (NLP IN JAVA)
+============================================================
+
+--- Original Input Paragraph ---
+Artificial Intelligence (AI), in its broadest sense, is intelligence exhibited by machines, particularly computer systems! It is a synthesis of concepts from computer science, mathematics, and linguistics; can intelligent agents solve complex real-world tasks effectively?
+
+--- Step 1: Tokenization & Punctuation Stripping ---
+Total Tokens Extracted: 36
+Token List: [Artificial, Intelligence, AI, in, its, broadest, sense, is, intelligence, exhibited, by, machines, particularly, computer, systems, It, is, a, synthesis, of, concepts, from, computer, science, mathematics, and, linguistics, can, intelligent, agents, solve, complex, real, world, tasks, effectively]
+
+--- Step 2: Stop Words Filtered Out ---
+Removed Stop Words Count: 11
+Removed Words: [in, its, is, by, It, is, a, of, from, and, can]
+
+--- Step 3: Final Filtered Keywords ---
+Remaining Meaningful Tokens Count: 25
+Remaining Tokens: [Artificial, Intelligence, AI, broadest, sense, intelligence, exhibited, machines, particularly, computer, systems, synthesis, concepts, computer, science, mathematics, linguistics, intelligent, agents, solve, complex, real, world, tasks, effectively]
+
+--- Cleaned Text Representation ---
+Artificial Intelligence AI broadest sense intelligence exhibited machines particularly computer systems synthesis concepts computer science mathematics linguistics intelligent agents solve complex real world tasks effectively
+
+[SUCCESS] Practical 12 executed successfully.

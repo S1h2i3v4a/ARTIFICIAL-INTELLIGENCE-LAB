@@ -1,0 +1,28 @@
+﻿============================================================
+PRACTICAL 18: MINIMAX OPTIMIZATION WITH ALPHA-BETA PRUNING
+============================================================
+
+Game State to Evaluate (Early Mid-game with 6 free cells):
+  +---+---+---+
+  | X |   |   |
+  +---+---+---+
+  |   | O |   |
+  +---+---+---+
+  |   |   | X |
+  +---+---+---+
+
+--- Comparative Efficiency Analysis ---
+Metric                         Standard Minimax     Alpha-Beta Pruning  
+-----------------------------------------------------------------------
+Best Move Selected             (0, 1)               (0, 1)              
+Optimal Utility Score          0                    0                   
+Total Nodes Evaluated          1052                 355                 
+Pruned Sub-Trees (Cut-offs)    N/A (0)              116                 
+Search Space Reduction         0.00%                66.25               %
+-----------------------------------------------------------------------
+
+Conclusion:
+  Alpha-Beta Pruning produces the mathematically identical optimal move
+  while cutting node evaluations by 66.25%, avoiding exhaustive subtree search.
+
+[SUCCESS] Practical 18 executed successfully.

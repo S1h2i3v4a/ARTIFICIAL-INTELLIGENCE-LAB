@@ -1,0 +1,19 @@
+﻿============================================================
+PRACTICAL 15: NAIVE BAYES SPAM/HAM TEXT CLASSIFIER IN JAVA
+============================================================
+
+--- Training Naive Bayes Classifier on 10 messages ---
+Vocabulary Size (Unique Words): 75
+Classes Trained: [HAM, SPAM]
+Class Prior Counts: {HAM=5, SPAM=5}
+
+--- Classification Results on Unseen Test Messages ---
+No.    Message Content                                                Prediction
+----------------------------------------------------------------------------------
+1      "Claim your free lottery cash prize right now call urgent"     [SPAM]    
+2      "Hey are you coming to the college library for studying AI"    [HAM]     
+3      "Win exclusive free discount coupon on luxury items"           [SPAM]    
+4      "Please check the email attachment for the practical file"     [HAM]     
+----------------------------------------------------------------------------------
+
+[SUCCESS] Practical 15 executed successfully.

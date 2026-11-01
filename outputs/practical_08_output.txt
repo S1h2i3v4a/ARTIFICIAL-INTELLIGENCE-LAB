@@ -1,0 +1,38 @@
+﻿============================================================
+PRACTICAL 08: 4-QUEENS PROBLEM VIA BACKTRACKING IN JAVA
+============================================================
+
+--- Backtracking Search Trace (First 14 Decisions) ---
+  Place Q1 at (Row 0, Col 0) [SAFE]
+  Conflict Q2 at (Row 0, Col 1) [REJECTED]
+  Conflict Q2 at (Row 1, Col 1) [REJECTED]
+  Place Q2 at (Row 2, Col 1) [SAFE]
+  Conflict Q3 at (Row 0, Col 2) [REJECTED]
+  Conflict Q3 at (Row 1, Col 2) [REJECTED]
+  Conflict Q3 at (Row 2, Col 2) [REJECTED]
+  Conflict Q3 at (Row 3, Col 2) [REJECTED]
+  Backtrack from (Row 2, Col 1)
+  Place Q2 at (Row 3, Col 1) [SAFE]
+  Conflict Q3 at (Row 0, Col 2) [REJECTED]
+  Place Q3 at (Row 1, Col 2) [SAFE]
+  Conflict Q4 at (Row 0, Col 3) [REJECTED]
+  Conflict Q4 at (Row 1, Col 3) [REJECTED]
+  ... [Total decision points explored: 78]
+
+Total Valid Distinct Solutions Found: 2
+
+--- Solution #1 (Rows 1-based: [2, 4, 1, 3]) ---
+   C0  C1  C2  C3
+R0  .   .  [Q]  .  
+R1 [Q]  .   .   .  
+R2  .   .   .  [Q] 
+R3  .  [Q]  .   .  
+
+--- Solution #2 (Rows 1-based: [3, 1, 4, 2]) ---
+   C0  C1  C2  C3
+R0  .  [Q]  .   .  
+R1  .   .   .  [Q] 
+R2 [Q]  .   .   .  
+R3  .   .  [Q]  .  
+
+[SUCCESS] Practical 08 executed successfully.

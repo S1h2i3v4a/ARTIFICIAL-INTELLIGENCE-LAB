@@ -1,0 +1,26 @@
+﻿============================================================
+PRACTICAL 11: PROPOSITIONAL LOGIC RESOLUTION REFUTATION
+============================================================
+
+Theorem to Prove:
+  Premise 1: Rain -> WetGround  [CNF: ~R v W]
+  Premise 2: Rain               [CNF: R]
+  Query Goal: WetGround (W)
+  Refutation Strategy: Add Negated Query (~W) to KB and resolve towards []
+
+Initial Clause Set in CNF:
+  (1) (W v ~R)
+  (2) (R)
+  (3) (~W)
+
+--- Step-by-Step Resolution Inferences ---
+  (4) Resolved (1) and (2) ===> (W)
+  (5) Resolved (1) and (3) ===> (~R)
+  (6) Resolved (2) and (5) ===> [] (EMPTY CLAUSE / CONTRADICTION)
+
+--- Verification Outcome ---
+Empty Clause [] (Contradiction) successfully derived!
+Result: The assumption ~Query leads to inconsistency with Knowledge Base.
+Therefore, Query 'W' (WetGround) is PROVED VALID & ENTAILED by Propositional Resolution.
+
+[SUCCESS] Practical 11 executed successfully.

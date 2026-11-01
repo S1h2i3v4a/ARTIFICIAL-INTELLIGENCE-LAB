@@ -1,0 +1,33 @@
+﻿============================================================
+PRACTICAL 09: ROBINSON'S UNIFICATION ALGORITHM IN JAVA
+============================================================
+
+Test Case 1:
+  Term 1: P(x, B)
+  Term 2: P(A, y)
+  Result: UNIFIABLE
+  MGU Substitution (Theta): {x=A, y=B}
+
+Test Case 2:
+  Term 1: Knows(John, x)
+  Term 2: Knows(y, Mother(y))
+  Result: UNIFIABLE
+  MGU Substitution (Theta): {y=John, x=Mother(y)}
+
+Test Case 3:
+  Term 1: Likes(x, Food(y))
+  Term 2: Likes(Sam, Food(Pizza))
+  Result: UNIFIABLE
+  MGU Substitution (Theta): {x=Sam, y=Pizza}
+
+Test Case 4:
+  Term 1: P(x, y)
+  Term 2: Q(A, B)
+  Result: FAILED TO UNIFY (No valid unifier)
+
+Test Case 5:
+  Term 1: P(x)
+  Term 2: P(f(x))
+  Result: FAILED TO UNIFY (No valid unifier)
+
+[SUCCESS] Practical 09 executed successfully.

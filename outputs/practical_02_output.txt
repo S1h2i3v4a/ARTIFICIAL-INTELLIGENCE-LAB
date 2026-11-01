@@ -1,0 +1,22 @@
+﻿============================================================
+PRACTICAL 02: DEPTH FIRST SEARCH (DFS) IN JAVA
+============================================================
+
+--- Tree / Graph Structure ---
+  Root -> [Node_A, Node_B, Node_C]
+  Node_A -> [Node_D, Node_E]
+  Node_B -> [Node_F]
+  Node_C -> [Node_G, Node_H]
+
+Recursive DFS Traversal Order:
+  Root -> Node_A -> Node_D -> Node_E -> Node_B -> Node_F -> Node_C -> Node_G -> Node_H
+
+Iterative DFS Traversal Order:
+  Root -> Node_A -> Node_D -> Node_E -> Node_B -> Node_F -> Node_C -> Node_G -> Node_H
+
+--- Directed Graph Cycle Detection via DFS ---
+Graph Adjacency: {1=[2], 2=[3], 3=[4, 1], 4=[]}
+Cycle Detected: true
+Cycle Path / Back-edge: 1 -> 2 -> 3 -> 1
+
+[SUCCESS] Practical 02 executed successfully.

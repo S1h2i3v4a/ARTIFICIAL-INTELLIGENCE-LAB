@@ -1,0 +1,45 @@
+﻿============================================================
+PRACTICAL 19: 2D VACUUM CLEANER AGENT SIMULATION IN JAVA
+============================================================
+
+Starting Simulation from Position: (0, 0)
+Initial Environment Layout (* = Dirty, . = Clean, [A] = Agent):
+      C0  C1  C2 
+  R0 [A*]  .   . 
+  R1   *   *   * 
+  R2   *   .   * 
+Total Dirty Tiles to Clean: 6
+
+Step   Position     Percept (Dirt?)      Action Taken     Dirt Remaining
+-------------------------------------------------------------------------
+1      (0, 0)       DIRTY DETECTED       SUCK (CLEAN)     5             
+2      (0, 1)       CLEAN                MOVE RIGHT       5             
+3      (0, 2)       CLEAN                MOVE RIGHT       5             
+4      (1, 2)       Clean tile           MOVE DOWN        5             
+5      (1, 2)       DIRTY DETECTED       SUCK (CLEAN)     4             
+6      (1, 1)       DIRTY                MOVE LEFT        4             
+7      (1, 1)       DIRTY DETECTED       SUCK (CLEAN)     3             
+8      (1, 0)       DIRTY                MOVE LEFT        3             
+9      (1, 0)       DIRTY DETECTED       SUCK (CLEAN)     2             
+10     (2, 0)       Clean tile           MOVE DOWN        2             
+11     (2, 0)       DIRTY DETECTED       SUCK (CLEAN)     1             
+12     (2, 1)       CLEAN                MOVE RIGHT       1             
+13     (2, 2)       DIRTY                MOVE RIGHT       1             
+14     (2, 2)       DIRTY DETECTED       SUCK (CLEAN)     0             
+-------------------------------------------------------------------------
+
+Final Cleaned Environment State:
+      C0  C1  C2 
+  R0   .   .   . 
+  R1   .   .   . 
+  R2   .   . [ A]
+
+--- Performance Metrics ---
+Initial Dirty Tiles:  6
+Tiles Cleaned:        6
+Remaining Dirty:      0
+Total Steps / Moves:  14
+Total Energy Cost:    20 units
+Cleaning Efficiency:  100.00%
+
+[SUCCESS] Practical 19 executed successfully.

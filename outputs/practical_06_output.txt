@@ -1,0 +1,22 @@
+﻿============================================================
+PRACTICAL 06: WATER JUG PROBLEM STATE-SPACE SEARCH (BFS)
+============================================================
+
+Problem Specifications:
+  Jug 1 Capacity: 4 Gallons
+  Jug 2 Capacity: 3 Gallons
+  Target Amount:  2 Gallons
+
+Executing BFS State-Space Exploration...
+
+Goal Reached in 4 Operations!
+
+Step   Rule / Operation             Jug 1 (4G)     Jug 2 (3G)    
+--------------------------------------------------------------
+0      Initial State                0              0             
+1      Fill Jug 2 (3 gal)           0              3             
+2      Pour Jug 2 -> Jug 1          3              0             
+3      Fill Jug 2 (3 gal)           3              3             
+4      Pour Jug 2 -> Jug 1          4              2              <-- TARGET REACHED
+--------------------------------------------------------------
+[SUCCESS] Practical 06 executed successfully.

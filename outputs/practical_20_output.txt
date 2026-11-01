@@ -1,0 +1,28 @@
+﻿============================================================
+PRACTICAL 20: RULE-BASED & INTENT-MATCHING CHATBOT IN JAVA
+============================================================
+
+--- Interactive Multi-turn Dialogue Transcript ---
+
+User:   "Hello there, good morning!"
+Bot:    [GREETING] Hi there! Welcome to the Artificial Intelligence Practical Lab assistant. What topic are you exploring?
+
+User:   "Can you tell me about the BCS751 lab syllabus?"
+Bot:    [LAB_INFO] This is BCS751: Artificial Intelligence Lab covering 22 practicals including Search, Logic, NLP, Games, and Bayesian reasoning.
+
+User:   "How does the A* search algorithm solve the 8 puzzle problem?"
+Bot:    [SEARCH_ALGORITHMS] Informed search algorithms like A* and Hill Climbing use heuristic evaluation functions to guide problem solving efficiently.
+
+User:   "What is the difference between stemming and lemmatization in NLP?"
+Bot:    [NLP] Natural Language Processing includes tokenization, stop-word removal, stemming/lemmatization, POS tagging, and Naive Bayes text classification.
+
+User:   "Why is alpha beta pruning used in minimax game search?"
+Bot:    [GAME_PLAYING] Minimax evaluates all game-tree branches to choose the optimal move. Alpha-Beta pruning cuts unpromising branches to speed up search.
+
+User:   "What can you do to help me?"
+Bot:    [HELP] I can guide you through any topic in your AI syllabus. Try asking about 'search algorithms' or 'NLP'.
+
+User:   "Thank you so much, goodbye!"
+Bot:    [FAREWELL] Goodbye! Best of luck with your Artificial Intelligence practical submission!
+
+[SUCCESS] Practical 20 executed successfully.

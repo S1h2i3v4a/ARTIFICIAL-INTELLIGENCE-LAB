@@ -1,0 +1,33 @@
+﻿============================================================
+PRACTICAL 07: PROLOG FAMILY RELATIONSHIPS LOGIC IN JAVA
+============================================================
+
+--- Knowledge Base Predicates & Facts ---
+Males:   [bob, david, george, john, mike]
+Females: [anna, emma, lisa, mary, susan]
+
+Parent Predicates (parent(Parent, Child)):
+  parent(john, bob).
+  parent(mary, bob).
+  parent(john, lisa).
+  parent(mary, lisa).
+  parent(bob, mike).
+  parent(susan, mike).
+  parent(bob, anna).
+  parent(susan, anna).
+  parent(david, susan).
+  parent(emma, susan).
+
+--- Querying Inferred Relationships ---
+?- father(X, mike)              => [bob]
+?- mother(X, mike)              => [susan]
+?- siblings(X, bob)             => [lisa]
+?- sister(X, bob)               => [lisa]
+?- brother(X, lisa)             => [bob]
+?- grandparent(X, mike)         => [david, emma, john, mary]
+?- grandfather(X, mike)         => [david, john]
+?- grandmother(X, mike)         => [emma, mary]
+?- ancestor(X, mike)            => [bob, david, emma, john, mary, susan]
+?- ancestor(X, anna)            => [bob, david, emma, john, mary, susan]
+
+[SUCCESS] Practical 07 executed successfully.

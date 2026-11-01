@@ -1,0 +1,30 @@
+﻿============================================================
+PRACTICAL 13: STEMMING AND LEMMATIZATION IN JAVA
+============================================================
+
+Input Sentence:
+  "The programmer was studying algorithms while computers were running multiple computations and children played"
+
+Original Word      Stemmed (Porter)   Lemmatized         Linguistic Difference
+-------------------------------------------------------------------------------
+The                the                the                Identical form      
+programmer         programmer         programmer         Identical form      
+was                wa                 be                 Stem != Lemma       
+studying           studi              study              Stem != Lemma       
+algorithms         algorithm          algorithm          Identical form      
+while              while              while              Identical form      
+computers          computer           computer           Identical form      
+were               were               be                 Stem != Lemma       
+running            run                run                Identical form      
+multiple           multiple           multiple           Identical form      
+computations       computation        computation        Identical form      
+and                and                and                Identical form      
+children           children           child              Stem != Lemma       
+played             play               play               Identical form      
+-------------------------------------------------------------------------------
+
+Summary Analysis:
+  1. Stemming applies heuristic suffix-stripping rules (e.g. 'studying' -> 'studi').
+  2. Lemmatization uses morphological and vocabulary analysis to return the true root/dictionary lemma (e.g. 'studying' -> 'study', 'children' -> 'child').
+
+[SUCCESS] Practical 13 executed successfully.

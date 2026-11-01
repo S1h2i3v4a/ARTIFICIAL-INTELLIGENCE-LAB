@@ -1,0 +1,33 @@
+﻿============================================================
+PRACTICAL 05: SIMULATED ANNEALING FOR N-QUEENS IN JAVA
+============================================================
+
+Problem: 8-Queens Constraint Satisfaction Problem
+Energy Function: Count of attacking queen pairs (Goal: E = 0)
+Initial Temperature T_0: 100.0, Cooling Rate: 0.985
+
+Iteration    Temperature      Current Energy   Best Energy 
+--------------------------------------------------------
+1            100.0000         5                5           
+150          10.5196          8                2           
+300          1.0900           4                2           
+450          0.1129           2                2           
+--------------------------------------------------------
+Annealing Completed!
+Total Iterations: 576
+Final Solution Energy (Conflicts): 0
+Queen Column Placements (Row per column): [2, 5, 7, 0, 3, 6, 4, 1]
+
+Final Chessboard Configuration:
+    C0 C1 C2 C3 C4 C5 C6 C7
+R0  .  .  .  Q  .  .  .  . 
+R1  .  .  .  .  .  .  .  Q 
+R2  Q  .  .  .  .  .  .  . 
+R3  .  .  .  .  Q  .  .  . 
+R4  .  .  .  .  .  .  Q  . 
+R5  .  Q  .  .  .  .  .  . 
+R6  .  .  .  .  .  Q  .  . 
+R7  .  .  Q  .  .  .  .  . 
+
+[SUCCESS] Optimal zero-conflict state achieved!
+[SUCCESS] Practical 05 executed successfully.

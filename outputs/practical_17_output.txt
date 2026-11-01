@@ -1,0 +1,28 @@
+﻿============================================================
+PRACTICAL 17: MINIMAX DECISION MAKING ALGORITHM IN JAVA
+============================================================
+
+Current Game State (AI 'O' to move):
+  +---+---+---+
+  | X | O | X |
+  +---+---+---+
+  |   | O |   |
+  +---+---+---+
+  |   | X |   |
+  +---+---+---+
+
+--- Minimax Evaluation Analysis ---
+Total Game-Tree Nodes Evaluated: 60
+Optimal Move for AI ('O'): Row 1, Col 0
+Calculated Utility / Score: 0
+
+Board After AI ('O') Minimax Optimal Move:
+  +---+---+---+
+  | X | O | X |
+  +---+---+---+
+  | O | O |   |
+  +---+---+---+
+  |   | X |   |
+  +---+---+---+
+
+[SUCCESS] Practical 17 executed successfully.

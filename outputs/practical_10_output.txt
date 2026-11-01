@@ -1,0 +1,39 @@
+﻿============================================================
+PRACTICAL 10: FORWARD AND BACKWARD CHAINING IN JAVA
+============================================================
+
+--- Rule Base (Knowledge Base) ---
+  Rule_1: IF (sneezing AND runny_nose) THEN nasal_congestion
+  Rule_2: IF (nasal_congestion AND fever) THEN infection
+  Rule_3: IF (infection AND body_ache) THEN influenza_flu
+  Rule_4: IF (nasal_congestion AND itchy_eyes) THEN allergy
+  Rule_5: IF (nasal_congestion AND cough) THEN common_cold
+
+Initial Observed Facts: [sneezing, runny_nose, fever, body_ache]
+Target Hypothesis (Goal): 'influenza_flu'
+
+========================= FORWARD CHAINING =========================
+Forward Chaining Proved Goal: true
+Derivation Steps:
+  Step 1: Applied Rule_1 -> Facts [sneezing, runny_nose] satisfy condition => Inferred: 'nasal_congestion'
+  Step 2: Applied Rule_2 -> Facts [nasal_congestion, fever] satisfy condition => Inferred: 'infection'
+  Step 3: Applied Rule_3 -> Facts [infection, body_ache] satisfy condition => Inferred: 'influenza_flu'
+
+========================= BACKWARD CHAINING =========================
+Backward Chaining Proved Goal: true
+Goal-Driven Proof Tree:
+[SUB-GOAL] Attempting to prove: 'influenza_flu'
+Evaluating rule Rule_3 with premises: [infection, body_ache]
+  [SUB-GOAL] Attempting to prove: 'infection'
+  Evaluating rule Rule_2 with premises: [nasal_congestion, fever]
+    [SUB-GOAL] Attempting to prove: 'nasal_congestion'
+    Evaluating rule Rule_1 with premises: [sneezing, runny_nose]
+      [FACT] 'sneezing' is directly verified from initial facts.
+      [FACT] 'runny_nose' is directly verified from initial facts.
+    [SUCCESS] Sub-goal 'nasal_congestion' proved via Rule_1!
+    [FACT] 'fever' is directly verified from initial facts.
+  [SUCCESS] Sub-goal 'infection' proved via Rule_2!
+  [FACT] 'body_ache' is directly verified from initial facts.
+[SUCCESS] Sub-goal 'influenza_flu' proved via Rule_3!
+
+[SUCCESS] Practical 10 executed successfully.

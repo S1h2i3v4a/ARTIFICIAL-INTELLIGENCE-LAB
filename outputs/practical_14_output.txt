@@ -1,0 +1,21 @@
+﻿============================================================
+PRACTICAL 14: PART OF SPEECH (POS) TAGGING IN JAVA
+============================================================
+
+Input Sentence:
+  "Artificial intelligence is transforming modern technology rapidly and efficiently"
+
+Index  Token              POS Tag    Penn Treebank Description          
+-------------------------------------------------------------------------
+1      Artificial         JJ         Adjective                          
+2      intelligence       NN         Noun, Singular                     
+3      is                 VBZ        Verb, 3rd Person Singular Present  
+4      transforming       VBG        Verb, Gerund / Present Participle  
+5      modern             JJ         Adjective                          
+6      technology         NN         Noun, Singular                     
+7      rapidly            RB         Adverb                             
+8      and                CC         Coordinating Conjunction           
+9      efficiently        RB         Adverb                             
+-------------------------------------------------------------------------
+
+[SUCCESS] Practical 14 executed successfully.

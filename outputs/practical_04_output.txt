@@ -1,0 +1,35 @@
+﻿============================================================
+PRACTICAL 04: HILL CLIMBING ALGORITHM IN JAVA
+============================================================
+
+Objective Function: f(x) = sin(x) + sin((10/3)*x) + ln(x) - 0.5*x + 10
+Search Domain: [1.0, 10.0]
+
+--- Run 1: Simple Hill Climbing (Start x = 2.0) ---
+Total Iterations: 15
+Local Maximum Reached: x = 2.3000, f(x) = 11.4111
+
+Sample Steps:
+  Step  0: x = 2.0000, f(x) = 10.9766
+  Step  1: x = 2.0200, f(x) = 11.0290
+  Step  2: x = 2.0400, f(x) = 11.0790
+  Step  3: x = 2.0600, f(x) = 11.1263
+  Step  4: x = 2.0800, f(x) = 11.1708
+  ... [Search climbed towards local ridge]
+  Step 15: x = 2.3000, f(x) = 11.4111
+
+--- Run 2: Random-Restart Hill Climbing (Overcoming Local Optima) ---
+Run #    Start x      Peak x           f(x)         Steps   
+--------------------------------------------------------
+1        7.5481       7.9681           10.0747      21      
+2        7.1490       7.9690           10.0746      41      
+3        3.7785       4.1785           9.4581       20      
+4        3.4937       4.1737           9.4584       34      
+5        6.9899       6.1899           9.6123       40      
+6        9.1304       9.7704           7.9690       32      
+7        4.3190       4.1790           9.4581       7       
+8        3.4817       4.1617           9.4580       34      
+--------------------------------------------------------
+Global Optimal Solution Found: x* = 7.9681, f(x*) = 10.0747
+
+[SUCCESS] Practical 04 executed successfully.
